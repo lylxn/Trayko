@@ -1,3 +1,5 @@
+![Uploading Trayko.jpg…]()
+
 # Project Overview
 Trayko is a lightweight browser extension that rewards users with badges for discovering internet easter eggs. It runs quietly in the background, detects supported pages and events, and updates the user’s badge collection in real time. The goal is to create a simple and fun way to explore the web while keeping the experience fast and unobtrusive.
 
