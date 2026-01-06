@@ -1,0 +1,39 @@
+:root{--bg:#f4f7fb;--card:#ffffff;--muted:#69707a;--accent:#5b8cff}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#f6f8fb,#eef1f8);color:#111;margin:0;padding:28px}
+.wrap{max-width:1000px;margin:0 auto}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.topbar h1{margin:0;font-size:20px;color:#111}
+.controls{display:flex;gap:10px;align-items:center}
+.controls input#search{padding:10px 12px;border-radius:10px;border:1px solid rgba(15,20,30,0.06);min-width:220px;box-shadow:0 6px 24px rgba(10,20,40,0.04)}
+.controls select{padding:10px;border-radius:10px;border:1px solid rgba(15,20,30,0.06)}
+.controls .small{font-size:13px;color:var(--muted)}
+
+.collection-grid{display:flex;flex-direction:column;gap:12px}
+.badge-card{display:flex;align-items:center;background:linear-gradient(180deg,#ffffff,#fafcff);padding:14px;border-radius:16px;margin:0;border:1px solid rgba(15,20,30,0.04);box-shadow:0 8px 22px rgba(28,37,54,0.06);transition:transform .15s ease,box-shadow .15s ease}
+.badge-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(28,37,54,0.08)}
+.badge-img{width:72px;height:72px;object-fit:contain;margin-right:14px;flex:0 0 72px}
+.meta{flex:1}
+/* hide the badge name and description from view to preserve surprises */
+.meta h2{display:none}
+.desc{display:none}
+.meta .tier{font-weight:700;color:#777;margin-top:4px}
+.meta .date{font-size:12px;color:#9aa3ac;margin-top:6px}
+.pin-btn{background:transparent;border:none;cursor:pointer;font-size:18px;color:#ffb74d;padding:8px;border-radius:8px}
+.pin-btn.pinned{color:#ffb74d;transform:scale(1.06)}
+.card-actions{display:flex;align-items:center;gap:8px}
+/* small helper for screen-reader-only text (keeps name available to assistive tech) */
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap;clip-path:inset(50%)}
+
+/* tier colors left accent */
+.tier-gold{border-left:6px solid #ffd36b;padding-left:12px}
+.tier-silver{border-left:6px solid #c0c6d6;padding-left:12px}
+.tier-bronze{border-left:6px solid #d9a76b;padding-left:12px}
+
+.empty{padding:20px;background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;border:1px solid rgba(0,0,0,0.03);text-align:center;color:#6b7785}
+
+/* responsive */
+@media (max-width:520px){
+  .controls{flex-direction:column;align-items:stretch}
+  .topbar{gap:10px}
+  .badge-card{flex-direction:row}
+}

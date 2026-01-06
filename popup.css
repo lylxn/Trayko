@@ -1,0 +1,25 @@
+:root{
+  --glass-bg: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+  --accent: linear-gradient(90deg,#ffd36b,#ff6bdb);
+}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;margin:0;padding:12px;background:transparent;color:#111}
+.container{width:320px;background:linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.92));border:1px solid rgba(10,20,30,0.04);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:18px;padding:14px;box-shadow:0 12px 34px rgba(12,22,40,0.08);color:#111}
+h1{font-size:18px;margin:0 0 10px;color:#f6a623}
+section{margin-top:10px;color:rgba(0,0,0,0.9)}
+#badges-list{list-style:none;padding:0;margin:0}
+.badge-item{padding:10px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);margin-bottom:10px;border:1px solid rgba(10,20,30,0.03);display:flex;align-items:center;gap:10px;transition:transform .15s ease,box-shadow .15s ease}
+.badge-item:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(15,22,40,0.06)}
+.badge-img-small{width:44px;height:44px;object-fit:contain;border-radius:8px;background:rgba(0,0,0,0.02);padding:6px}
+.badge-item .meta{font-size:13px;color:#111}
+.badge-item .desc{font-size:12px;margin-top:6px;color:#495057}
+.collected{margin-top:8px;font-size:12px;color:#2ea56f}
+#open-badges{padding:8px 12px;border-radius:10px;border:none;background:linear-gradient(90deg,#5b8cff,#6bd3ff);color:#042;cursor:pointer;font-weight:700;transition:transform .18s ease}
+#open-badges:active{transform:scale(.98)}
+/* tier indicators */
+.tier-gold{border-left:4px solid #ffd36b}
+.tier-silver{border-left:4px solid #c0c6d6}
+.tier-bronze{border-left:4px solid #d9a76b}
+/* subtle rewarding pulse for recently collected */
+.pulse{animation:popPulse .9s ease-out}
+@keyframes popPulse{0%{transform:scale(.96);box-shadow:0 6px 18px rgba(0,0,0,0.12)}50%{transform:scale(1.02)}100%{transform:scale(1)}}

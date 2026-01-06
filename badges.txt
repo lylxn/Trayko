@@ -1,0 +1,8 @@
+# badges.txt - one badge per line
+# Format: pattern-name-description-rarity
+# Rarity must be one of: bronze, silver, gold
+
+example.com-Example Badge-Visit example.com for a demo-bronze
+github.com-GitHub Badge-Visit GitHub for a demo-silver
+google.com-Google-This is a test-bronze
+landonorris.com-Lando Norris-OHH LANDO NORRIS-gold
